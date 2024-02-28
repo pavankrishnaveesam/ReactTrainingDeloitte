@@ -1,0 +1,23 @@
+What are keys in React JS? How keys are involving  in array processing?
+
+In React, keys are special attributes that are used to uniquely identify elements in a collection (such as arrays) rendered by React. 
+Keys help React identify which items have changed, are added, or are removed from a list. 
+
+When elements are dynamically generated from an array, React uses keys to efficiently update the UI.
+
+Ex:
+const items = [
+  { id: 1, name: 'Item 1' },
+  { id: 2, name: 'Item 2' },
+  { id: 3, name: 'Item 3' }
+];
+
+function List() {
+  return (
+    <ul>
+      {items.map(item => (
+        <li key={item.id}>{item.name}</li>;
+      ))}
+    </ul>
+  );
+}

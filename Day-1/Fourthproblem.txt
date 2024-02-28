@@ -1,0 +1,8 @@
+How to display images in React JS?
+
+import myImage from './myImage.png'; 
+// Assuming myImage.png is located in the same directory as this component
+
+<img src={myImage} alt="Description of the image" />
+
+//Here, myImage is a variable that holds the imported image file.
